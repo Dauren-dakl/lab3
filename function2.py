@@ -102,6 +102,7 @@ def m(category, movies):
 
 x = "Romance"
 r = m(x, movies)
+print("\n")
 print("#3")
 print(r)
 
@@ -117,10 +118,11 @@ def ae(movies):
 
 
 as2 = ae(movies)
+print("#4")
 print("Average IMDB Score:", as2)
 
 #5
-def q(movies):
+def q1(movies):
     return sum(movie['imdb'] for movie in movies) / len(movies) if movies else 0
 
 def q(movies, category):
@@ -128,4 +130,6 @@ def q(movies, category):
     return q(category_movies)
 
 
+qw = q(movies, category)
+print(qw)
 
