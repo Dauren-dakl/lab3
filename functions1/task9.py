@@ -1,6 +1,8 @@
-def grams_to_ounces(grams):
-    return 28.3495231 * grams
+#9
+def sv(radius):
+    return (4/3) * 3.14 * (radius ** 3)
 
-grams = float(input("граммов: "))
-ounces = grams_to_ounces(grams)
-print(grams, "грамм = ",ounces , "унций")
+
+radius = float(input())
+print("#9")
+print( sv(radius))

@@ -1,6 +1,9 @@
-def grams_to_ounces(grams):
-    return 28.3495231 * grams
-
-grams = float(input("граммов: "))
-ounces = grams_to_ounces(grams)
-print(grams, "грамм = ",ounces , "унций")
+#12
+def hm(items1):
+    for item2 in items1:
+        print('*' * item2)
+        
+user_input = input("#12 : ")
+num12 = list(map(int, user_input.split()))  
+hm(num12)
+    

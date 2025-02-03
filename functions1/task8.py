@@ -1,6 +1,14 @@
-def grams_to_ounces(grams):
-    return 28.3495231 * grams
+#8
+def spy_game(nums):
+    code = [0, 0, 7]
+    for num in nums:
+        if num == code[0]:  
+            code.pop(0)  
+        if not code: 
+            return True
+    return False  
 
-grams = float(input("граммов: "))
-ounces = grams_to_ounces(grams)
-print(grams, "грамм = ",ounces , "унций")
+print("#8")
+print(spy_game([1, 2, 4, 0, 0, 7, 5]))  
+print(spy_game([1, 0, 2, 4, 0, 5, 7]))  
+print(spy_game([1, 7, 2, 0, 4, 5, 0]))  

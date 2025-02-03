@@ -1,6 +1,8 @@
-def grams_to_ounces(grams):
-    return 28.3495231 * grams
+#2
+def tem(F):
+    C = (5/9)*(F-32)
+    return C
+F=int(input())
+print("#2")
 
-grams = float(input("граммов: "))
-ounces = grams_to_ounces(grams)
-print(grams, "грамм = ",ounces , "унций")
+print(tem(F))

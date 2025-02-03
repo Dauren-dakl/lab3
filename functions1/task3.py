@@ -1,6 +1,20 @@
-def grams_to_ounces(grams):
-    return 28.3495231 * grams
+#3
+def solve(numheads , numlegs):
+    for chickens in range(numheads + 1 ):
+        rabbits = numheads - chickens
+        if 4 * rabbits + 2 * chickens == numlegs:
+            return chickens , rabbits 
+        
+    return None 
+        
+    
+numheads = 35 
+numlegs = 94
 
-grams = float(input("граммов: "))
-ounces = grams_to_ounces(grams)
-print(grams, "грамм = ",ounces , "унций")
+r = solve(numheads , numlegs)
+if r:
+    chickens , rabbits  = r 
+    print(f" #3 chickens = {chickens} and rabbits = {rabbits}"  )
+else :
+    print("#3 None")
+    

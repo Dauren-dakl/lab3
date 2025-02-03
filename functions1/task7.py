@@ -1,6 +1,10 @@
-def grams_to_ounces(grams):
-    return 28.3495231 * grams
-
-grams = float(input("граммов: "))
-ounces = grams_to_ounces(grams)
-print(grams, "грамм = ",ounces , "унций")
+#7
+def has_33(nums):
+    for i in range(len(nums) - 1):
+        if nums[i] == 3 and nums[i + 1] == 3:
+            return True
+    return False
+print("#7")
+print(has_33([1, 3, 3]))  
+print(has_33([1, 3, 1, 3]))  
+print(has_33([3, 1, 3])) 

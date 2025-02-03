@@ -1,6 +1,10 @@
-def grams_to_ounces(grams):
-    return 28.3495231 * grams
-
-grams = float(input("граммов: "))
-ounces = grams_to_ounces(grams)
-print(grams, "грамм = ",ounces , "унций")
+#10
+def ue(lst):
+    ul = []
+    for item in lst:
+        if item not in ul:
+            ul.append(item)
+    return ul
+il= list(map(int, input().split()))
+print("#10")
+print( ue(il))

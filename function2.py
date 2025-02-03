@@ -133,6 +133,8 @@ def filter_by_category(movies, category):
 
 category = 'Action'
 category_movies = filter_by_category(movies, category)
+
+
 ar1 = q(category_movies)
 print("#5")
 print(ar1)

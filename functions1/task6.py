@@ -1,6 +1,7 @@
-def grams_to_ounces(grams):
-    return 28.3495231 * grams
+#6
+def w(sentence):
+    return " ".join(sentence.split()[::-1])
 
-grams = float(input("граммов: "))
-ounces = grams_to_ounces(grams)
-print(grams, "грамм = ",ounces , "унций")
+user_input = input()
+print("#6")
+print(w(user_input))

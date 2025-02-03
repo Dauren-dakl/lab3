@@ -1,6 +1,12 @@
-def grams_to_ounces(grams):
-    return 28.3495231 * grams
+#11
+def ip(word):
 
-grams = float(input("граммов: "))
-ounces = grams_to_ounces(grams)
-print(grams, "грамм = ",ounces , "унций")
+    cw = ''.join(char.lower() for char in word if char.isalnum())
+    return cw == cw[::-1]
+
+
+us = input()
+if ip(us):
+    print("#11 palindrome")
+else:
+    print("#11 not a palindrome")
