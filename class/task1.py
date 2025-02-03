@@ -13,5 +13,6 @@ class StringProcessor:
 if __name__ == "__main__":
     processor = StringProcessor() 
     processor.getString()  
+    
     processor.printString() 
     
