@@ -122,14 +122,17 @@ print("#4")
 print("Average IMDB Score:", as2)
 
 #5
-def q1(movies):
+def q(movies):
     return sum(movie['imdb'] for movie in movies) / len(movies) if movies else 0
 
-def q(movies, category):
-    category_movies = q(movies, category)
-    return q(category_movies)
+def filter_by_category(movies, category):
+
+    return [movie for movie in movies if movie['category'] == category]
 
 
-qw = q(movies, category)
-print(qw)
 
+category = 'Action'
+category_movies = filter_by_category(movies, category)
+ar1 = q(category_movies)
+print("#5")
+print(ar1)
